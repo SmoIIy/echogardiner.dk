@@ -1,0 +1,19 @@
+---
+const {title = "Title", content = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos officia autem repellat totam blanditiis. Molestiae dolorem fugiat quo harum aliquid. Fugiat iusto explicabo, suscipit asperiores similique cum quidem iure possimus.", image} = Astro.props;
+---
+
+<section class="min-h-screen bg-dark-blue flex justify-center items-center ">
+    <div class="lg:max-w-screen-lg h-full mx-auto flex ">
+        <article class="flex flex-col justify-center items-center prose sm:max-w-lg p-16 ">
+            <h2 class="text-4xl font-serif text-main-white">{title}</h2>
+            <p class="prose text-main-white">{content}</p>
+        </article>
+        <div class="p-16 sm:max-w-lg order-first">
+            <img class="" src="https://placehold.co/1080x1080" alt="placeholder">
+        </div>
+    </div>
+</section>
+
+<style>
+
+</style>
