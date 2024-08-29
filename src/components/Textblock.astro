@@ -1,0 +1,15 @@
+---
+const { bg_color, text_color, title, content } = Astro.props;
+---
+
+<section
+    class={bg_color}
+    class:list={["min-h-96 flex flex-col  items-center justify-center "]}
+>
+    <article class="prose lg:max-w-screen-lg mx-auto p-4">
+        <div class="prose">
+            <h2 class={text_color}>{title}</h2>
+            <p class={text_color}>{content}</p>
+        </div>
+    </article>
+</section>
