@@ -4,16 +4,21 @@ const {
   content = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos officia autem repellat totam blanditiis. Molestiae dolorem fugiat quo harum aliquid. Fugiat iusto explicabo, suscipit asperiores similique cum quidem iure possimus.",
   image,
   order,
+  bg_color,
+  text_color,
 } = Astro.props;
 ---
 
-<section class="min-h-screen bg-dark-blue flex justify-center items-center">
+<section
+  class:list={["min-h-screen flex justify-center items-center", {}]}
+  class={bg_color}
+>
   <div class="lg:max-w-screen-lg h-full mx-auto flex">
     <article
       class="flex flex-col justify-center items-center prose sm:max-w-lg p-16"
     >
-      <h2 class="text-4xl font-serif text-main-white">{title}</h2>
-      <p class="prose text-main-white">{content}</p>
+      <h2 class:list={["text-4xl font-serif"]} class={text_color}>{title}</h2>
+      <p class:list={["prose"]} class={text_color}>{content}</p>
     </article>
     <div class="p-16 sm:max-w-lg" class:list={[{ first: order }]}>
       <img class="" src="https://placehold.co/1080x1080" alt="placeholder" />
@@ -24,5 +29,35 @@ const {
 <style>
   .first {
     order: -9999;
+  }
+  .bg-dark-blue {
+    background-color: #212830;
+  }
+  .bg-dark-grey {
+    background-color: #2d2e28;
+  }
+  .bg-light-brown {
+    background-color: #ac651a;
+  }
+  .bg-dark-brown {
+    background-color: #663b1e;
+  }
+  .bg-white {
+    background-color: #f2f2f2;
+  }
+  .text-main-white {
+    color: #f2f2f2;
+  }
+  .text-dark-blue {
+    color: #212830;
+  }
+  .text-dark-grey {
+    color: #2d2e28;
+  }
+  .text-light-brown {
+    color: #ac651a;
+  }
+  .text-dark-brown {
+    color: #663b1e;
   }
 </style>
