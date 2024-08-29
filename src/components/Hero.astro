@@ -1,3 +1,19 @@
 ---
-
+import { Image } from "astro:assets";
+import heroimage from "../../src/assets/images/image 6.png";
 ---
+
+<section class="grid items-center justify-items-center">
+  <h1 class="sr-only">Echo Gardiner</h1>
+
+  <Image
+    src={heroimage}
+    alt="Floor with curtain"
+    class="col-start-1 row-start-1 h-dvh object-cover"
+  />
+  <img
+    src="https://placehold.co/600x350"
+    alt="placeholder"
+    class="col-start-1 row-start-1 p-4"
+  />
+</section>
