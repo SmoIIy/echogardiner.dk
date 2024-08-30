@@ -6,6 +6,8 @@ import Hero from "../components/Hero.astro";
 import Textblock from "../components/Textblock.astro";
 import BlockHalfImg from "../components/BlockHalfImg.astro";
 import Blockstylish from "../components/Blockstylish.astro";
+import BlockImage from "../components/BlockImage.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Echo Gardiner">
@@ -23,6 +25,11 @@ import Blockstylish from "../components/Blockstylish.astro";
         bg_color="bg-white"
         text_color="text-dark-blue"
     />
+    <BlockImage
+        title="ImageBlock"
+        bg_color="bg-light-brown"
+        text_color="text-white"
+    />
     <BlockHalfImg
         title="Skab et stilfuldt og funktionelt indtryk"
         order="true"
@@ -36,7 +43,8 @@ import Blockstylish from "../components/Blockstylish.astro";
         title="Skab et stilfuldt og funktionelt indtryk"
         content=" med vores brede udvalg af erhvervsgardiner. Uanset om du ønsker at regulere lyset, skabe akustik eller tilføje et æstetisk touch, har vi den perfekte løsning til dit projekt. Vores erfarne team står klar til at rådgive dig og sikre en professionel installation."
     />
-    <Test isRed="true" />
+
+    <Footer />
 </Layout>
 
 <style></style>
