@@ -12,11 +12,23 @@ import Footer from "../components/Footer.astro";
 
 <Layout title="Echo Gardiner">
     <Hero />
+    <Textblock
+        bg_color="bg-light-brown"
+        text_color="text-white"
+        title="Skab et stilfuldt og funktionelt indtryk"
+        content=" med vores brede udvalg af erhvervsgardiner. Uanset om du ønsker at regulere lyset, skabe akustik eller tilføje et æstetisk touch, har vi den perfekte løsning til dit projekt. Vores erfarne team står klar til at rådgive dig og sikre en professionel installation."
+    />
     <Block
         title="Skab et stilfuldt og funktionelt indtryk"
         content=" med vores brede udvalg af erhvervsgardiner. Uanset om du ønsker at regulere lyset, skabe akustik eller tilføje et æstetisk touch, har vi den perfekte løsning til dit projekt. Vores erfarne team står klar til at rådgive dig og sikre en professionel installation."
         order="true"
         bg_color="bg-dark-blue"
+        text_color="text-white"
+    />
+    <Block
+        title="Skab et stilfuldt og funktionelt indtryk"
+        content=" med vores brede udvalg af erhvervsgardiner. Uanset om du ønsker at regulere lyset, skabe akustik eller tilføje et æstetisk touch, har vi den perfekte løsning til dit projekt. Vores erfarne team står klar til at rådgive dig og sikre en professionel installation."
+        bg_color="bg-dark-grey"
         text_color="text-white"
     />
     <Blockstylish
@@ -27,8 +39,8 @@ import Footer from "../components/Footer.astro";
     />
     <BlockImage
         title="ImageBlock"
-        bg_color="bg-light-brown"
-        text_color="text-white"
+        bg_color="bg-white"
+        text_color="text-dark-blue"
     />
     <BlockHalfImg
         title="Skab et stilfuldt og funktionelt indtryk"
@@ -37,13 +49,14 @@ import Footer from "../components/Footer.astro";
         bg_color="bg-dark-brown"
         text_color="text-white"
     />
-    <Textblock
-        bg_color="bg-light-brown"
-        text_color="text-white"
+    <BlockHalfImg
         title="Skab et stilfuldt og funktionelt indtryk"
         content=" med vores brede udvalg af erhvervsgardiner. Uanset om du ønsker at regulere lyset, skabe akustik eller tilføje et æstetisk touch, har vi den perfekte løsning til dit projekt. Vores erfarne team står klar til at rådgive dig og sikre en professionel installation."
+        bg_color="bg-white"
+        text_color="text-light-brown"
     />
 
+    <div id="anchor"></div>
     <Footer />
 </Layout>
 

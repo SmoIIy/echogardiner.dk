@@ -1,5 +1,6 @@
 ---
 const { bg_color, text_color, title, content } = Astro.props;
+import Button from "./Button.astro";
 ---
 
 <section
@@ -8,8 +9,9 @@ const { bg_color, text_color, title, content } = Astro.props;
 >
     <article class="prose lg:max-w-screen-lg mx-auto p-4">
         <div class="prose">
-            <h2 class={text_color}>{title}</h2>
+            <h2 class={text_color} class:list={["text-3xl"]}>{title}</h2>
             <p class={text_color}>{content}</p>
+            <Button text="Kontakt os!" href="#anchor" />
         </div>
     </article>
 </section>

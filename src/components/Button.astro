@@ -1,0 +1,18 @@
+---
+const { href = "#", text = "Button", variant } = Astro.props;
+---
+
+<a
+    class={variant}
+    class:list={[
+        "no-underline px-8 py-4 border border-main-white rounded-md bg-transparent text-main-white transition-all duration-300 ease-in-out",
+    ]}
+    href={href}>{text}</a
+>
+
+<style>
+    a:hover {
+        border-radius: 1rem 0.1rem;
+        transform: rotate(15deg);
+    }
+</style>
