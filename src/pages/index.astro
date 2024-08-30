@@ -4,6 +4,8 @@ import Block from "../components/Block.astro";
 import Test from "../components/Test.astro";
 import Hero from "../components/Hero.astro";
 import Textblock from "../components/Textblock.astro";
+import BlockHalfImg from "../components/BlockHalfImg.astro";
+import Blockstylish from "../components/Blockstylish.astro";
 ---
 
 <Layout title="Echo Gardiner">
@@ -15,14 +17,15 @@ import Textblock from "../components/Textblock.astro";
         bg_color="bg-dark-blue"
         text_color="text-white"
     />
-    <Block
+    <Blockstylish
         title="Skab et stilfuldt og funktionelt indtryk"
         content=" med vores brede udvalg af erhvervsgardiner. Uanset om du ønsker at regulere lyset, skabe akustik eller tilføje et æstetisk touch, har vi den perfekte løsning til dit projekt. Vores erfarne team står klar til at rådgive dig og sikre en professionel installation."
         bg_color="bg-white"
         text_color="text-dark-blue"
     />
-    <Block
+    <BlockHalfImg
         title="Skab et stilfuldt og funktionelt indtryk"
+        order="true"
         content=" med vores brede udvalg af erhvervsgardiner. Uanset om du ønsker at regulere lyset, skabe akustik eller tilføje et æstetisk touch, har vi den perfekte løsning til dit projekt. Vores erfarne team står klar til at rådgive dig og sikre en professionel installation."
         bg_color="bg-dark-brown"
         text_color="text-white"
