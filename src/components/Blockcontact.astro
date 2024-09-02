@@ -1,0 +1,63 @@
+---
+const {
+    title = "Title",
+    phone = "8888 8888",
+    email = "email@email.com",
+    adress = "Adressevej 42",
+    city = "City 4000",
+    image,
+    order,
+    bg_color,
+    text_color,
+} = Astro.props;
+---
+
+<section
+    class:list={["h-screen flex justify-center items-center py-4 md:py-0"]}
+    class={bg_color}
+>
+    <div
+        class="lg:max-w-screen-lg h-full mx-auto grid grid-cols-1 md:grid-cols-12 items-center"
+    >
+        <div
+            class="p-4 sm:p-4 h-full flex justify-center items-center w-full md:col-start-7 md:col-end-13"
+            class:list={[{ first: order }]}
+        >
+            <p class="absolute text-main-white bg-main-dark-grey p-2">
+                Google maps kort perhaps?
+            </p>
+            <img
+                class="object-cover aspect-square w-full"
+                src="https://images.unsplash.com/photo-1611822506999-793d04b7ddd8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="placeholder"
+            />
+        </div>
+        <article
+            class="flex flex-col justify-center -order-1 md:order-1 items-start h-full prose sm:max-w-lg p-4 sm:p-4 sm:py-16 md:col-start-1 md:col-end-6 md:row-start-1"
+        >
+            <h2 class:list={["text-5xl text-left"]} class={text_color}>
+                Her bor vi
+            </h2>
+            <div>
+                <p class:list={["prose my-2"]} class={text_color}>
+                    {adress}
+                </p>
+                <p class:list={["prose my-2"]} class={text_color}>{city}</p>
+            </div>
+            <div>
+                <p class:list={["prose my-2"]} class={text_color}>
+                    Tlf: +45 {phone}
+                </p>
+                <p class:list={["prose my-2"]} class={text_color}>
+                    Mail: {email}
+                </p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<style>
+    .first {
+        order: -9999;
+    }
+</style>
