@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import heroimage from "../../src/assets/images/heroimage.png";
 import herowave from "../../src/assets/images/herowave.svg";
+import logo from "../../src/assets/images/logo.svg"
 ---
 
 <section class="grid items-center justify-items-center">
@@ -18,9 +19,9 @@ import herowave from "../../src/assets/images/herowave.svg";
         class="col-start-1 row-start-1 place-self-end"
     />
 
-    <img
-        src="https://placehold.co/600x350"
-        alt="placeholder"
-        class="col-start-1 row-start-1 p-4 mb-16"
+    <Image
+        src={logo}
+        alt="Logo of Echo Gardiner"
+        class="col-start-1 row-start-1 rounded-3xl mb-16 bg-main-white/80 max-w-96"
     />
 </section>

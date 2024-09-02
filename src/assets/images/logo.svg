@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .06em;
+      }
+
+      .cls-2 {
+        stroke: #000;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        letter-spacing: .07em;
+      }
+
+      .cls-3 {
+        stroke: #006837;
+      }
+
+      .cls-6 {
+        font-size: 120px;
+      }
+
+      .cls-6, .cls-7 {
+        font-family: SourceSerifVariable-Roman, 'Source Serif Variable';
+        font-variation-settings: 'wght' 389;
+      }
+
+      .cls-8 {
+        letter-spacing: .08em;
+      }
+
+      .cls-7 {
+        font-size: 48px;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+
+      .cls-10 {
+        letter-spacing: .07em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <path class="cls-4" d="m580.22,1c10.36,0,18.78,8.42,18.78,18.78v310.44c0,10.36-8.42,18.78-18.78,18.78H19.78c-10.36,0-18.78-8.42-18.78-18.78V19.78C1,9.42,9.42,1,19.78,1h560.44m0-1H19.78C8.86,0,0,8.86,0,19.78v310.44c0,10.92,8.86,19.78,19.78,19.78h560.44c10.92,0,19.78-8.86,19.78-19.78V19.78c0-10.92-8.86-19.78-19.78-19.78h0Z"/>
+    <g>
+      <line class="cls-2" x1="176.5" y1="40.5" x2="511.5" y2="40.5"/>
+      <line class="cls-2" x1="176.5" y1="307.5" x2="512" y2="307.5"/>
+      <line class="cls-2" x1="511.5" y1="40.5" x2="512.5" y2="307.5"/>
+    </g>
+    <path class="cls-3" d="m37.5,64.5S346.5,4.5,53.5,36.5"/>
+    <path class="cls-3" d="m59.5,31.5s40,78-6,138c0,0,30.25,74.22,22.12,107.11"/>
+    <path class="cls-3" d="m101.34,103c.96,44.57-47.84,66.5-47.84,66.5,0,0,55-4,66.43-58.96"/>
+    <path class="cls-3" d="m53.5,169.5s130.06,49,102.53-138"/>
+    <ellipse class="cls-3" cx="63" cy="171" rx="9.5" ry="3.5"/>
+    <path class="cls-3" d="m53.5,273.86l38.56,2.75s7.87-12.16-5.34-15.13,11.79-6.98,11.79-6.98c0,0-15-82-45-83.5,0,0,36,55.5,36,78.5"/>
+    <text class="cls-6" transform="translate(185.07 179.2)"><tspan x="0" y="0">E</tspan><tspan class="cls-9" x="72.48" y="0">c</tspan><tspan x="129.6" y="0">ho</tspan></text>
+    <text class="cls-7" transform="translate(208.47 233.42)"><tspan class="cls-5" x="0" y="0">G</tspan><tspan class="cls-10" x="36.34" y="0">a</tspan><tspan class="cls-1" x="64.08" y="0">r</tspan><tspan class="cls-8" x="87.36" y="0">diner</tspan></text>
+  </g>
+</svg>
