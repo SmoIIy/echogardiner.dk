@@ -7,6 +7,8 @@ const {
     bg_color,
     text_color,
 } = Astro.props;
+import Image from "astro/components/Image.astro";
+import billede from "../../src/assets/images/hvid-billede-med-sort-stol-pt.jpg"
 ---
 
 <section
@@ -21,9 +23,9 @@ const {
             <p class:list={["prose"]} class={text_color}>{content}</p>
         </article>
         <div class="p-4 md:p-0 md:h-full max-h-full shrink-3" class:list={[{ first: order }]}>
-            <img
+            <Image
                 class="object-cover md:h-full aspect-[9/16]"
-                src="/src/assets/images/hvid-billede-med-sort-stol-pt.jpg"
+                src={billede}
                 alt="placeholder"
             />
         </div>

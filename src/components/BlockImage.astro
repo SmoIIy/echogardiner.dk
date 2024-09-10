@@ -1,5 +1,7 @@
 ---
 const { title = "Title", image, order, bg_color, text_color } = Astro.props;
+import Image from "astro/components/Image.astro";
+import billede from "../../src/assets/images/grønt-spisebord-gråt-ls.jpg"
 ---
 
 <section
@@ -15,9 +17,9 @@ const { title = "Title", image, order, bg_color, text_color } = Astro.props;
             </h2>
         </article>
         <div class="p-4 sm:p-0" class:list={[{ first: order }]}>
-            <img
+            <Image
                 class="aspect-[16/9] w-full object-cover"
-                src="https://images.unsplash.com/photo-1606838977034-c63af9f4f026?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src={billede}
                 alt="placeholder"
             />
         </div>
