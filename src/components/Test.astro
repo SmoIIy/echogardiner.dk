@@ -1,16 +1,20 @@
 ---
-const { isRed } = Astro.props;
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+
+interface Props {
+   imagePath: string;
+   altText: string;
+   name: string;
+   age: number;
+}
+
+const { imagePath, altText, name, age } = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/images*.{jpeg,jpg,png,gif,svg}');
+// if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/images*.{jpeg,jpg,png,gif}"`);
 ---
-
-<!-- If `isRed` is truthy, class will be "box red". --><!-- If `isRed` is falsy, class will be "box". -->
-<div class:list={["box", "p-4", { red: isRed }]}><slot /></div>
-
-<style>
-  .box {
-    border: 1px solid blue;
-    height: 400px;
-  }
-  .red {
-    border-color: red;
-  }
-</style>
+<div class="card">
+    <h2>{name}</h2>
+    <p>Age: {age}</p>
+    <Image src={images[imagePath]()} alt={altText} />
+</div>

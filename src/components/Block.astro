@@ -26,11 +26,7 @@ import billede from "../../src/assets/images/brunt-spisebord-lyst-ls.jpg"
             class="p-4 sm:p-16 sm:max-w-lg aspect-square"
             class:list={[{ first: order }]}
         >
-            <Image
-                class="aspect-square object-cover w-full"
-                src={billede}
-                alt="placeholder"
-            />
+            <slot />
         </div>
     </div>
 </section>

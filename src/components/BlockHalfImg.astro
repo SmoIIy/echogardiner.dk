@@ -2,13 +2,10 @@
 const {
     title = "Title",
     content = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos officia autem repellat totam blanditiis. Molestiae dolorem fugiat quo harum aliquid. Fugiat iusto explicabo, suscipit asperiores similique cum quidem iure possimus.",
-    image,
     order,
     bg_color,
     text_color,
 } = Astro.props;
-import Image from "astro/components/Image.astro";
-import billede from "../../src/assets/images/hvid-billede-med-sort-stol-pt.jpg"
 ---
 
 <section
@@ -23,11 +20,8 @@ import billede from "../../src/assets/images/hvid-billede-med-sort-stol-pt.jpg"
             <p class:list={["prose"]} class={text_color}>{content}</p>
         </article>
         <div class="p-4 md:p-0 md:h-full max-h-full shrink-3" class:list={[{ first: order }]}>
-            <Image
-                class="object-cover md:h-full aspect-[9/16]"
-                src={billede}
-                alt="placeholder"
-            />
+
+            <slot/>
         </div>
     </div>
 </section>

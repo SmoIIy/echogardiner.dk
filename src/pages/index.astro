@@ -9,6 +9,11 @@ import Blockstylish from "../components/Blockstylish.astro";
 import BlockImage from "../components/BlockImage.astro";
 import Footer from "../components/Footer.astro";
 import Blockcontact from "../components/Blockcontact.astro";
+
+import Image from "astro/components/Image.astro";
+import stolBillede from "../../src/assets/images/hvid-billede-med-sort-stol-pt.jpg"
+import grøntSpisebord from "../../src/assets/images/grønt-spisebord-gråt-ls.jpg"
+import bruntSpisebord from "../../src/assets/images/brunt-spisebord-lyst-ls.jpg"
 ---
 
 <Layout title="Echo Gardiner">
@@ -19,28 +24,44 @@ import Blockcontact from "../components/Blockcontact.astro";
         order="true"
         bg_color="bg-dark-blue"
         text_color="text-white"
-    />
-
-
+    >            <Image
+                class="aspect-square object-cover w-full"
+                src={bruntSpisebord}
+                alt="placeholder"
+            /></Block>
     <Block
         title="Skab et stilfuldt og funktionelt indtryk"
         content=" med vores brede udvalg af erhvervsgardiner. Uanset om du ønsker at regulere lyset, skabe akustik eller tilføje et æstetisk touch, har vi den perfekte løsning til dit projekt. Vores erfarne team står klar til at rådgive dig og sikre en professionel installation."
         bg_color="bg-dark-brown"
         text_color="text-white"
-    />
+    >   <Image
+                class="aspect-square object-cover w-full"
+                src={bruntSpisebord}
+                alt="placeholder"
+            /></Block>
     <Blockstylish
         title="Skab et stilfuldt og funktionelt indtryk"
         content=" med vores brede udvalg af erhvervsgardiner. Uanset om du ønsker at regulere lyset, skabe akustik eller tilføje et æstetisk touch, har vi den perfekte løsning til dit projekt. Vores erfarne team står klar til at rådgive dig og sikre en professionel installation."
         bg_color="bg-white"
         text_color="text-dark-blue"
-    />
+    ><Image
+                class="object-cover aspect-square w-full"
+                src={stolBillede}
+                alt="placeholder"
+            /></Blockstylish>
     <BlockHalfImg
         title="Skab et stilfuldt og funktionelt indtryk"
         order="true"
         content=" med vores brede udvalg af erhvervsgardiner. Uanset om du ønsker at regulere lyset, skabe akustik eller tilføje et æstetisk touch, har vi den perfekte løsning til dit projekt. Vores erfarne team står klar til at rådgive dig og sikre en professionel installation."
         bg_color="bg-dark-brown"
         text_color="text-white"
-    />
+        imagePath="hvid-billede-med-sort-stol-pt"
+        description="hvid-billede-med-sort-stol-billede"
+    ><Image
+                class="object-cover md:h-full aspect-[9/16]"
+                src={stolBillede}
+                alt="alt"
+            /></BlockHalfImg>
     <Blockcontact
         adress="Greve Strandvej 192"
         city="2670 Greve"
@@ -58,14 +79,22 @@ import Blockcontact from "../components/Blockcontact.astro";
         title="ImageBlock"
         bg_color="bg-dark-blue"
         text_color="text-white"
-    />
+    >            <Image
+                class="aspect-[16/9] w-full object-cover"
+                src={grøntSpisebord}
+                alt="placeholder"
+            /></BlockImage>
 
     <BlockHalfImg
         title="Skab et stilfuldt og funktionelt indtryk"
         content=" med vores brede udvalg af erhvervsgardiner. Uanset om du ønsker at regulere lyset, skabe akustik eller tilføje et æstetisk touch, har vi den perfekte løsning til dit projekt. Vores erfarne team står klar til at rådgive dig og sikre en professionel installation."
         bg_color="bg-white"
         text_color="text-light-brown"
-    />
+    ><Image
+                class="object-cover md:h-full aspect-[9/16]"
+                src={stolBillede}
+                alt="alt"
+            /></BlockHalfImg>
 
     <div id="anchor"></div>
     <Footer />
