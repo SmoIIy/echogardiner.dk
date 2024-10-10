@@ -2,13 +2,14 @@
 const {
     title = "Title",
     content = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos officia autem repellat totam blanditiis. Molestiae dolorem fugiat quo harum aliquid. Fugiat iusto explicabo, suscipit asperiores similique cum quidem iure possimus.",
-    image,
+    imagePath,
     order,
     bg_color,
     text_color,
 } = Astro.props;
 import Image from "astro/components/Image.astro";
-import billede from "../../src/assets/images/brunt-spisebord-lyst-ls.jpg"
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}');
+if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
 ---
 
 <section
@@ -26,7 +27,11 @@ import billede from "../../src/assets/images/brunt-spisebord-lyst-ls.jpg"
             class="p-4 sm:p-16 sm:max-w-lg aspect-square"
             class:list={[{ first: order }]}
         >
-            <slot />
+        <Image
+        class="aspect-square object-cover w-full"
+        src={images[imagePath]()}
+        alt="placeholder"
+    />
         </div>
     </div>
 </section>

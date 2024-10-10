@@ -1,11 +1,15 @@
 ---
+import Image from "astro/components/Image.astro";
 const {
     title = "Title",
     content = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos officia autem repellat totam blanditiis. Molestiae dolorem fugiat quo harum aliquid. Fugiat iusto explicabo, suscipit asperiores similique cum quidem iure possimus.",
     order,
     bg_color,
     text_color,
+    imagePath
 } = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}');
+if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
 ---
 
 <section
@@ -21,7 +25,11 @@ const {
         </article>
         <div class="p-4 md:p-0 md:h-full max-h-full shrink-3" class:list={[{ first: order }]}>
 
-            <slot/>
+            <Image
+                class="object-cover md:h-full aspect-[9/16]"
+                src={images[imagePath]()}
+                alt="alt"
+            />
         </div>
     </div>
 </section>

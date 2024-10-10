@@ -1,7 +1,8 @@
 ---
-const { title = "Title", image, order, bg_color, text_color } = Astro.props;
+const { title = "Title", imagePath, order, bg_color, text_color } = Astro.props;
 import Image from "astro/components/Image.astro";
-import billede from "../../src/assets/images/grønt-spisebord-gråt-ls.jpg"
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}');
+if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
 ---
 
 <section
@@ -17,7 +18,11 @@ import billede from "../../src/assets/images/grønt-spisebord-gråt-ls.jpg"
             </h2>
         </article>
         <div class="p-4 sm:p-0" class:list={[{ first: order }]}>
-            <slot />
+            <Image
+                class="aspect-[16/9] w-full object-cover"
+                src={images[imagePath]()}
+                alt="placeholder"
+            />
         </div>
     </div>
 </section>
