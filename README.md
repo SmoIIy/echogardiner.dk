@@ -10,6 +10,10 @@ Clone the repo and then:
 
 `npm install`
 
+### Adding blocks
+
+Import a component and insert inside the `Layout` component in index.astro. The syntax is identical to React components
+
 ### Editing blocks
 
 These function a lot like react components. You can find them in src/components and they end in .astro.
