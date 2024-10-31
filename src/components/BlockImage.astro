@@ -6,9 +6,10 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
 ---
 
 <section
-    class:list={["flex justify-center items-center md:py-12 py-4"]}
+    class:list={["flex justify-center items-center md:py-0 py-4"]}
     class={bg_color}
 >
+    <!-- remove lg:max-w-screen-lg for max bleed -->
     <div
         class="lg:max-w-screen-lg h-full mx-auto justify-between items-center flex flex-col"
     >
