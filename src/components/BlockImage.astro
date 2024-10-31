@@ -12,7 +12,8 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
     <div
         class="lg:max-w-screen-lg h-full mx-auto justify-between items-center flex flex-col"
     >
-    {title &&   <article class="prose p-4 sm:p-8 w-full">
+    {title &&   
+        <article class="prose p-4 sm:p-8 w-full">
             <h2 class:list={["md:text-5xl text-center"]} class={text_color}>
                 {title}
             </h2>
