@@ -81,4 +81,4 @@ Feel free to call me
 
 ### Launching
 
-Run `npm run build` and upload the dist folder to webdock.
+Run `npm run build` and upload the dist folder to webdock. The server is called 'testjanus'
