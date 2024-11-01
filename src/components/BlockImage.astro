@@ -6,7 +6,7 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
 ---
 
 <section
-    class:list={["flex justify-center items-center md:py-0 py-2"]}
+    class:list={["flex justify-center items-center md:py-0 "]}
     class={bg_color}
 >
     <!-- remove lg:max-w-screen-lg for max bleed -->
@@ -20,7 +20,7 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
             </h2>
         </article>}
       
-        <div class="p-4 sm:p-0" class:list={[{ first: order }]}>
+        <div class=" sm:p-0" class:list={[{ first: order }]}>
             <Image
                 class="aspect-[16/9] w-full object-cover"
                 src={images[imagePath]()}
