@@ -13,12 +13,12 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
 ---
 
 <section
-    class:list={["min-h-screen flex justify-center items-center py-4"]}
+    class:list={["lg:min-h-screen flex justify-center items-center sm:py-4"]}
     class={bg_color}
 >
-    <div class="lg:max-w-screen-lg h-full mx-auto flex flex-col sm:flex-row">
+    <div class="lg:max-w-screen-lg lg:h-full mx-auto flex flex-col sm:flex-row">
         <article
-            class="flex flex-col justify-center items-center prose sm:max-w-lg p-4 sm:p-16"
+            class="flex flex-col justify-center items-center prose sm:max-w-lg p-4 lg:p-16"
         >
             <h2 class:list={["text-4xl"]} class={text_color}>{title}</h2>
             <p class:list={["prose"]} class={text_color}>{content}</p>
@@ -37,7 +37,9 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
 </section>
 
 <style>
-    .first {
-        order: -9999;
+    @media (min-width: 640px) {
+        .first {
+            order: -9999;
+        }
     }
 </style>
