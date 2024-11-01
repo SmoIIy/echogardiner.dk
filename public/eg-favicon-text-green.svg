@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #006837;
+        stroke: #006837;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: SourceSerifRoman-Light, 'Source Serif Variable';
+        font-size: 10.64px;
+        font-variation-settings: 'wght' 300;
+        font-weight: 300;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2-2" data-name="Layer_2">
+    <g>
+      <circle class="cls-1" cx="8.5" cy="8.5" r="8"/>
+      <g>
+        <text class="cls-2" transform="translate(.53 9.86) scale(1.52 1)"><tspan x="0" y="0">E</tspan></text>
+        <text class="cls-2" transform="translate(5.47 13.41) scale(1.52 1)"><tspan x="0" y="0">G</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

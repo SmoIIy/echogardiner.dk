@@ -75,6 +75,10 @@ The reason for this, is that i am a bad developer, and I could not figure out ho
 
 Insert a `<script>` tag below the html in the component, and write javascript as normal
 
-#### If anything breaks
+### If anything breaks
 
 Feel free to call me
+
+### Launching
+
+Run `npm run build` and upload the dist folder to webdock.

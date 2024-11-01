@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: SourceSerifRoman-Light, 'Source Serif Variable';
+        font-size: 10.64px;
+        font-variation-settings: 'wght' 300;
+        font-weight: 300;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2-2" data-name="Layer_2">
+    <g>
+      <text class="cls-1" transform="translate(0 8.89) scale(1.52 1)"><tspan x="0" y="0">E</tspan></text>
+      <text class="cls-1" transform="translate(4.94 12.43) scale(1.52 1)"><tspan x="0" y="0">G</tspan></text>
+    </g>
+  </g>
+</svg>
