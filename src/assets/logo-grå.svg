@@ -29,10 +29,6 @@
       }
 
       .cls-6 {
-        fill: #fff;
-      }
-
-      .cls-7 {
         letter-spacing: .07em;
       }
 
@@ -40,8 +36,12 @@
         stroke: #006837;
       }
 
-      .cls-8 {
+      .cls-7 {
         letter-spacing: .08em;
+      }
+
+      .cls-8 {
+        fill: #f2f2f2;
       }
 
       .cls-9 {
@@ -54,7 +54,7 @@
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer_1">
-    <rect class="cls-6" width="600" height="350" rx="19.78" ry="19.78"/>
+    <rect class="cls-8" width="600" height="350" rx="19.78" ry="19.78"/>
     <g>
       <line class="cls-3" x1="176.5" y1="40.5" x2="511.5" y2="40.5"/>
       <line class="cls-3" x1="176.5" y1="307.5" x2="512" y2="307.5"/>
@@ -67,6 +67,6 @@
     <ellipse class="cls-4" cx="63" cy="171" rx="9.5" ry="3.5"/>
     <path class="cls-4" d="M53.5,273.86l38.56,2.75s7.87-12.16-5.34-15.13,11.79-6.98,11.79-6.98c0,0-15-82-45-83.5,0,0,36,55.5,36,78.5"/>
     <text class="cls-2" transform="translate(185.07 179.2)"><tspan x="0" y="0">E</tspan><tspan class="cls-10" x="72.48" y="0">c</tspan><tspan x="129.6" y="0">ho</tspan></text>
-    <text class="cls-1" transform="translate(208.47 233.42)"><tspan class="cls-7" x="0" y="0">G</tspan><tspan class="cls-5" x="36.34" y="0">a</tspan><tspan class="cls-9" x="64.08" y="0">r</tspan><tspan class="cls-8" x="87.36" y="0">diner</tspan></text>
+    <text class="cls-1" transform="translate(208.47 233.42)"><tspan class="cls-6" x="0" y="0">G</tspan><tspan class="cls-5" x="36.34" y="0">a</tspan><tspan class="cls-9" x="64.08" y="0">r</tspan><tspan class="cls-7" x="87.36" y="0">diner</tspan></text>
   </g>
 </svg>

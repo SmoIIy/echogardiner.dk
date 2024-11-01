@@ -20,7 +20,7 @@ import logo from "../assets/logo.svg"
         </div>
         <div class="py-4 w-72">
             <p>Jørgen Ulrichsen</p>
-            <p>CVR 4504 4882</p>
+            <p>CVR <span class="cvr cursor-pointer">4504 4882</span></p>
         </div>
         <div class="py-4 w-72">
             <p>TLF: +45 4090 3101</p>
@@ -37,3 +37,17 @@ import logo from "../assets/logo.svg"
         <p>Copyright</p>
     </div>
 </footer>
+
+<script>
+  const copyButton = document.querySelector('.cvr');
+  copyButton.addEventListener('click', () => {
+    const textToCopy = copyButton.innerHTML; // Replace with your desired text
+    navigator.clipboard.writeText(textToCopy)
+      .then(() => {
+        alert('CVR kopieret til clipboard!');
+      })
+      .catch(err => {
+        console.error('Failed to copy text: ', err);
+      });
+  });
+</script>
